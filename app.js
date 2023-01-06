@@ -14,6 +14,6 @@ app.use(cors());
 
 app.use('/api',userRouter );
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT,()=>{
     console.log('server running on port 3000');
 })
